@@ -18,7 +18,7 @@ C++ implementation of a command line interpreter (CLI) with support for pipes, I
 | `echo` | Pass-through |
 | `wc` | Count words (`-w`), characters (`-c`)|
 | `tr` | Find and replace text |
-| `head` | Output first N lines (`-nN`) or characters (`-cN`) |
+| `head` | Output first N lines |
 | `time` | Display current time |
 | `date` | Display current date |
 | `touch` | Create an empty file |
