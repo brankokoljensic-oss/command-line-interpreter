@@ -1,6 +1,6 @@
 # Command Line Interpreter
 
-C++ implementation of a command line interpreter (CLI) with support for pipes, I/O redirection, and batch processing, developed as part of an Object-Oriented Programming course.
+C++ implementation of a command line interpreter (CLI) with support for pipes, I/O redirection, and batch processing. This project was developed as part of the Object-Oriented Programming course (2025/2026 academic year) at the School of Electrical Engineering, University of Belgrade.
 
 ## Features
 
@@ -58,10 +58,6 @@ Batch execution:
 $ batch script.txt
 $ batch script.txt >output.txt
 ```
-
-## Project Context
-
-This project was developed as part of the Object-Oriented Programming course (2025/2026 academic year) at the Faculty of Electrical Engineering, University of Belgrade.
 
 ## License
 
