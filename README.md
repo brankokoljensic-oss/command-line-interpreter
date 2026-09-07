@@ -29,13 +29,6 @@ C++ implementation of a command line interpreter (CLI) with support for pipes, I
 | `exit` | Exit the interpreter |
 
 
-### Key Components
-
-- **`Reader`** — Validates characters, handles quoted strings, and produces typed tokens (WORD, QUOTED_STRING, PIPE, INPUT_REDIRECT, OUTPUT_REDIRECT, APPEND_REDIRECT).
-- **`Parser`** — Splits token stream at pipe boundaries, resolves numeric pipeline references, parses each segment into a `Command` with options, arguments, and I/O redirections, and validates pipeline semantics.
-- **`StreamManager`** — Provides a uniform `std::istream&` / `std::ostream&` interface regardless of whether the underlying source is stdin/stdout, a file, or an in-memory string. Manages ownership and cleanup of heap-allocated streams.
-- **`PipelineExecutor`** — Chains commands by capturing each command's output in a `std::stringstream` and feeding it as the next command's input.
-
 ## Usage Examples
 
 Basic command execution:
