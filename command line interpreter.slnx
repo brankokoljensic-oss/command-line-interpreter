@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="command line interpreter/command line interpreter.vcxproj" Id="8be0c952-fb52-4582-8010-ee5b30618edb" />
+</Solution>

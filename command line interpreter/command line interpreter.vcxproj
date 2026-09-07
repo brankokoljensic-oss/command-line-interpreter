@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{8be0c952-fb52-4582-8010-ee5b30618edb}</ProjectGuid>
+    <RootNamespace>commandlineinterpreter</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AttemptedOutputRedirectionError.cpp" />
+    <ClCompile Include="AttemptedInputRedirectionError.cpp" />
+    <ClCompile Include="BadFormatError.cpp" />
+    <ClCompile Include="Command.cpp" />
+    <ClCompile Include="CommandBatch.cpp" />
+    <ClCompile Include="CommandDate.cpp">
+      <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdcpp20</LanguageStandard>
+    </ClCompile>
+    <ClCompile Include="CommandEcho.cpp" />
+    <ClCompile Include="CommandExit.cpp" />
+    <ClCompile Include="CommandHead.cpp" />
+    <ClCompile Include="CommandMaker.cpp" />
+    <ClCompile Include="CommandLineInterpreter.cpp" />
+    <ClCompile Include="CommandPrompt.cpp" />
+    <ClCompile Include="CommandRM.cpp">
+      <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdcpp20</LanguageStandard>
+    </ClCompile>
+    <ClCompile Include="CommandTime.cpp" />
+    <ClCompile Include="CommandTouch.cpp" />
+    <ClCompile Include="CommandTR.cpp" />
+    <ClCompile Include="CommandTruncate.cpp" />
+    <ClCompile Include="CommandWC.cpp" />
+    <ClCompile Include="CustomError.cpp" />
+    <ClCompile Include="InvalidInputRedirectionError.cpp" />
+    <ClCompile Include="InvalidOptionError.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MissingArgumentError.cpp" />
+    <ClCompile Include="MissingFileError.cpp" />
+    <ClCompile Include="MissingOptionError.cpp" />
+    <ClCompile Include="Pipeline.cpp" />
+    <ClCompile Include="PipelineOrderError.cpp" />
+    <ClCompile Include="Prompter.cpp" />
+    <ClCompile Include="Reader.cpp" />
+    <ClCompile Include="ReadError.cpp" />
+    <ClCompile Include="TooManyArgumentsError.cpp" />
+    <ClCompile Include="UnexpectedArgumentsError.cpp" />
+    <ClCompile Include="UnexpectedCharactersError.cpp" />
+    <ClCompile Include="UnknownCommandError.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AttemptedOutputRedirectionError.h" />
+    <ClInclude Include="AttemptedInputRedirectionError.h" />
+    <ClInclude Include="BadFormatError.h" />
+    <ClInclude Include="Command.h" />
+    <ClInclude Include="CommandBatch.h" />
+    <ClInclude Include="CommandDate.h" />
+    <ClInclude Include="CommandEcho.h" />
+    <ClInclude Include="CommandExit.h" />
+    <ClInclude Include="CommandHead.h" />
+    <ClInclude Include="CommandMaker.h" />
+    <ClInclude Include="CommandLineInterpreter.h" />
+    <ClInclude Include="CommandPrompt.h" />
+    <ClInclude Include="CommandRM.h" />
+    <ClInclude Include="CommandTime.h" />
+    <ClInclude Include="CommandTouch.h" />
+    <ClInclude Include="CommandTR.h" />
+    <ClInclude Include="CommandTruncate.h" />
+    <ClInclude Include="CommandWC.h" />
+    <ClInclude Include="CustomError.h" />
+    <ClInclude Include="DataType.h" />
+    <ClInclude Include="InvalidInputRedirectionError.h" />
+    <ClInclude Include="InvalidOptionError.h" />
+    <ClInclude Include="MissingArgumentError.h" />
+    <ClInclude Include="MissingFileError.h" />
+    <ClInclude Include="MissingOptionError.h" />
+    <ClInclude Include="Pipeline.h" />
+    <ClInclude Include="PipelineOrderError.h" />
+    <ClInclude Include="Prompter.h" />
+    <ClInclude Include="Reader.h" />
+    <ClInclude Include="ReadError.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="TooManyArgumentsError.h" />
+    <ClInclude Include="UnexpectedArgumentsError.h" />
+    <ClInclude Include="UnexpectedCharactersError.h" />
+    <ClInclude Include="UnknownCommandError.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="command line interpreter.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
