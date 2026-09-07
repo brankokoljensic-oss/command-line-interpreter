@@ -15,17 +15,17 @@ C++ implementation of a command line interpreter (CLI) with support for pipes, I
 
 | Command | Description |
 |---------|-------------|
-| `echo` | Pass-through with options for uppercase (`-u`), lowercase (`-l`), reverse (`-reverse`), repeat (`-rN`), and tab indentation (`-t`) |
-| `wc` | Count words (`-w`), characters (`-c`), lines (`-l`), blanks (`-b`), unique words (`-unique`), longest/shortest word (`-max`/`-min`) |
-| `tr` | Find and replace text with options for case-insensitive (`-i`), first-only (`-first`), and count mode (`-count`) |
+| `echo` | Pass-through |
+| `wc` | Count words (`-w`), characters (`-c`)|
+| `tr` | Find and replace text |
 | `head` | Output first N lines (`-nN`) or characters (`-cN`) |
-| `time` | Display current time with options for individual components (`-h`, `-m`, `-s`) |
-| `date` | Display current date with options for day (`-d`), month (`-m`), year (`-y`), day of week (`-day`), epoch (`-r`), date difference (`-diff`), and tomorrow/yesterday |
+| `time` | Display current time |
+| `date` | Display current date |
 | `touch` | Create an empty file |
 | `truncate` | Clear file contents |
 | `rm` | Delete a file |
-| `batch` | Execute commands from a script file |
-| `prompt` | Change the command prompt, with one-time mode (`-t`) |
+| `batch` | Execute commands from a file |
+| `prompt` | Change the command prompt |
 | `exit` | Exit the interpreter |
 
 
